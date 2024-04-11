@@ -1,5 +1,6 @@
 package com.phonebook.tests;
 
+import com.phonebook.data.UserData;
 import com.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +21,7 @@ public class CreateAccountTest extends TestBase {
     //click on Login Link
     app.getUser().clickOnLoginLink();
     //enter email
-    app.getUser().fillLoginRegisterForm(new User().setEmail( "kravs@gmail.com").setPassword( "Ghjjk87!hh"));
+    app.getUser().fillLoginRegisterForm(new User().setEmail(UserData.EMAIL).setPassword( UserData.PASSWORD));
     //click on Registration
     app.getUser().clickOnRegistrationButton();
     //assert Alert is present

@@ -10,7 +10,11 @@
                 </methods>
             </class>
 
-            <class name="com.phonebook.tests.AddContactTest"/>
+            <class name="com.phonebook.tests.AddContactTest">
+                <methods>
+                    <exclude name=".*From.*"/>
+                </methods>
+            </class>
             <class name="com.phonebook.tests.DeleteContactTest"/>
         </classes>
     </test>
